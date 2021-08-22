@@ -1,0 +1,485 @@
+/*
+
+Marshin Shop Website.
+marshin.shop
+Desinged by Маршин Entertainment.
+Copyright. All rights reserved.
+2021
+
+*/
+
+	body{
+		margin: 0;
+		padding: 0;
+		background-color: #000;
+		color: #fff;
+		font-family: Helvetica;
+	}
+
+	.title{
+		box-sizing: border-box;
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-bottom: 30px;
+		font-size: 25pt;
+		/*text-align: center;*/
+	}
+
+	@media screen and (max-width: 700px) {
+		  .title {
+		  	padding-left: 0;
+		    text-align: center;
+		  }
+		}
+
+	.header{
+		border-bottom: 1px solid #1c1c1c;
+	}
+
+	.category{
+		box-sizing: border-box;
+	}
+
+		.cat_title{
+			font-weight: bold;
+			margin-left: 20px;
+			margin-top: 15px;
+			margin-bottom: 20px;
+			font-size: 18px;
+		}
+
+		.cat_content{
+			width: 100%;
+			overflow-x: scroll;
+				overflow-y: hidden;
+				white-space: nowrap;
+				-ms-overflow-style: none;
+				scrollbar-width: none;
+				/*margin-bottom: 50px;*/
+		}
+
+		.cat_content::-webkit-scrollbar {
+				 display: none;
+
+		}
+
+		.cat_content_player{
+			margin-right: 20px;
+			margin-left: 20px;
+		}
+
+		.cat_item{
+			display: inline-block;
+			margin-right: 20px;
+		}
+
+		.cat_item_fix{
+			display: inline-block;
+			margin-right: 16px;
+		}
+
+		img.item_cover{
+			border: 1px solid #1c1c1c;
+			border-radius: 2px;
+			height: 180px;
+			width: 180px;
+			background-color: #1c1c1c;
+		}
+
+
+		.item_name{
+			margin-top: 8px;
+			font-size: 11pt;
+			overflow: hidden;
+			width: 180px;
+			text-overflow: ellipsis;
+			color: #fff;
+		}
+
+		.item_year{
+			margin-top: 5px;
+			font-size: 11pt;
+			overflow: hidden;
+			width: 180px;
+			text-overflow: ellipsis;
+			color: #7B7B7B;
+		}
+
+		.item_label{
+			color: red;
+			padding-right: 5px;
+		}
+
+		.cat_line{
+			height: 1px;
+			margin-top: 20px;
+			margin-left: 20px;
+			background-color: #191919;
+		}
+
+		iframe{
+			border-radius: 3px; 
+			border: 1px solid #1c1c1c;
+		}
+
+	.videos{
+		box-sizing: border-box;
+	}
+
+		img.video_item_cover{
+			border: 1px solid #1c1c1c;
+			border-radius: 3px;
+			height: 180px;
+			width: 360px;
+			background-color: #1c1c1c;
+		}
+
+
+		.video_item_name{
+			margin-top: 8px;
+			font-size: 11pt;
+			overflow: hidden;
+			width: 360px;
+			text-overflow: ellipsis;
+			color: #fff;
+		}
+
+	.lyrics{
+		box-sizing: border-box;
+	}
+
+		img.lyrics_item_cover{
+			border: 1px solid #1c1c1c;
+			border-radius: 2px;
+			height: 80px;
+			width: 180px;
+			background-color: #1c1c1c;
+		}
+
+		.lyrics_item_symbol{
+			background-color: red;
+			height: 80px;
+			width: 180px;
+		}
+
+
+		.lyrics_show_btn{
+			color: orange;
+			cursor: pointer;
+			margin-top: 15px;
+		}
+
+		.lyrics_full{
+			display: none;
+			white-space: pre-line;
+			line-height: 23px;
+		}
+
+		.lyrcis_short{
+			white-space: pre-line;
+			line-height: 23px;
+		}
+
+	.projects{
+		box-sizing: border-box;
+	}
+
+		img.more_item_cover{
+			border: 1px solid #1c1c1c;
+			border-radius: 50%;
+			height: 60px;
+			width: 60px;
+			background-color: #1c1c1c;
+		}
+
+	.footer{
+		box-sizing: border-box;
+		color: #464646;
+		font-size: 14px;
+		padding-top: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 100px;
+		line-height: 20px;
+	}
+
+		.links{
+			margin-top: 20px;
+		}
+
+		a.space-2{
+			margin-right: 5px;
+			color: #464646;
+		}
+
+
+
+
+
+
+		.block_line{
+			height: 1px;
+			background-color: #191919;
+		}
+
+
+
+
+
+	/*Product Page styles*/
+
+		.item_page{
+			box-sizing: border-box;
+		}
+
+
+		.product_title{
+			font-weight: bold;
+			margin-left: 20px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-size: 18px;
+		}
+
+
+		.product_card {
+		  float: left;
+		  width: 50%;
+		  padding-left: 20px;
+		  padding-right: 20px;
+		  padding-bottom: 20px;
+		  box-sizing: border-box;
+		}
+
+			.product_cards:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+
+			.buy_button{
+				width: 100%;
+				box-sizing: border-box;
+				padding: 15px 15px;
+				background-color: #f3f3f3;
+				color: black;
+				font-size: 18px;
+				text-align: center;
+				font-weight: bold;
+				border-radius: 9px;
+			}
+
+				.buy_button_url{
+					text-decoration: none;
+					color: black;
+				}
+
+				.buy_options{
+					text-align: center;
+					color: #464646;
+					font-size: 14px;
+					margin-top: 10px;
+				}
+
+		.product_description{
+			color: #f4f4f4;
+			font-size: 15px;
+			white-space: pre-line;
+			line-height: 21px;
+		}
+
+
+		.product_images_block {
+		  position: relative;
+		}
+
+		.product_image_big {
+		  display: none;
+		}
+
+
+		.item_image{
+			width: 100%;
+			height: auto;
+			border-radius: 6px;
+		}
+
+		.product_gallery_button_prev,
+		.product_gallery_button_next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 0.1%;
+		  width: 40%;
+		  padding: 90px;
+		  box-sizing: border-box;
+		  height: 90%;
+		  user-select: none;
+		  -webkit-user-select: none;
+		}
+
+		.product_gallery_button_next {
+		  right: 0;
+		}
+
+		.product_image_gallery{
+			margin-top: 5px;
+		}
+
+		.product_image_gallery:after {
+		  content: "";
+		  display: inline-block;
+		  clear: both;
+		}
+
+		.product_image_gallery_block {
+		  float: left;
+		  width: 16.64%;
+		}
+
+		.product_image_small {
+		  opacity: 0.6;
+		  width: 100%;
+		}
+
+		.fix_image_gallery_left{
+			border-radius: 6px 0 0 6px;
+		}
+
+		.fix_image_gallery_right{
+			border-radius: 0 6px 6px 0;
+		}
+
+		.active_image,
+		.product_image_small:hover {
+		  opacity: 1;
+		  cursor: pointer;
+		}
+
+		.product_labels{
+			margin-top: 25px;
+		}
+
+		.label{
+			font-size: 14px;
+			color: #999999;
+			border: 1px solid #999999;
+			padding: 5px;
+			border-radius: 3px;
+			margin-bottom: 8px;
+			display: inline-block;
+			margin-right: 3px;
+		}
+
+		.label_red{
+			color: red;
+			border: 1px solid red;
+		}
+
+		.label:last-child{
+			margin-right: 0;
+		}
+
+
+		@media screen and (max-width: 700px) {
+		  .product_card {
+		    width: 100%;
+		  }
+		}
+
+
+
+
+		/* Delivery, FAQ, Support pages styles */
+
+		.text{
+			margin-top: 20px;
+			margin-bottom: 20px;
+			margin-right: 20px;
+			font-size: 14px;
+			color: white;
+			line-height: 20px;
+		}
+
+		.text_blocks{
+			display: block;
+			margin-bottom: 15px;
+			margin-left: 20px;
+		}
+
+		.faq_url{
+			color: white;
+		}
+
+		.support_urls{
+			margin-top: 20px;
+		}
+
+
+		/* Sold out page styles */
+
+		.message{
+			margin-top: 40px;
+			margin-bottom: 45px;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		.sold_out_h{
+			font-size: 20px;
+			font-weight: bold;
+			color: white;
+			text-align: center;
+			margin-bottom: 7px;
+		}
+
+		.sold_out_msg{
+			font-size: 14px;
+			color: white;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		.sold_out_social{
+			text-align: center;
+		}
+
+		.sold_out_back{
+			margin-top: 30px;
+			text-align: center;
+			font-size: 14px;
+		}
+
+		.sold_out_back a{
+			text-decoration: underline;
+			color: #f3f3f3;
+		}
+
+
+		/* 404 */
+
+		.error{
+			margin-top: 20px;
+			margin-bottom: 45px;
+			margin-left: 20px;
+		}
+
+		.error_number{
+			font-size: 120px;
+			font-weight: bold;
+			color: white;
+		}
+
+		.error_text{
+			font-size: 14px;
+			color: white;
+		}
+
+		.error_back{
+			color: white;
+			margin-top: 30px;
+			font-size: 14px;
+		}
+
+
+
