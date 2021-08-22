@@ -1,0 +1,205 @@
+<!-- 
+
+Marshin Shop Website.
+marshin.shop
+Desinged by Маршин Entertainment.
+Copyright. All rights reserved.
+2021
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Год первый CD Disk - Маршин Shop</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="title" content="Год первый CD Disk - Маршин Shop">
+	<meta name="description" content="Get Год первый CD disk product on Маршин Shop">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://marshin.shop/_URLNAME_">
+	<meta property="og:title" content="Год первый CD Disk - Маршин Shop">
+	<meta property="og:description" content="Get Год первый CD disk product on Маршин Shop">
+	<meta property="og:image" content="favicon/preview_01_01.jpg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="http://marshin.shop/_URLNAME_">
+	<meta property="twitter:title" content="Год первый CD Disk - Маршин Shop">
+	<meta property="twitter:description" content="Get Год первый CD disk product on Маршин Shop">
+	<meta property="twitter:image" content="favicon/preview_01_02.jpg">
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+</head>
+<body>
+
+	<div class="header">
+		<a href="http://marshin.shop">
+			<div class="title"><img src="images/logo.png"></div>
+		</a>
+	</div>
+
+	<div class="item_page">
+
+		<div class="product_title">Год первый Mixtape</div>
+
+		<div class="product_cards">
+		  <div class="product_card">
+
+		    <div class="product_images_block">
+			  <div class="product_image_big">
+			    <img src="content/music/yearone-cd/images/item_01_b.jpg" class="item_image">
+			  </div>
+
+			  <div class="product_image_big">
+			    <img src="content/music/yearone-cd/images/item_02_b.jpg" class="item_image">
+			  </div>
+
+			  <div class="product_image_big">
+			    <img src="content/music/yearone-cd/images/item_03_b.jpg" class="item_image">
+			  </div>
+			    
+			  <div class="product_image_big">
+			    <img src="content/music/yearone-cd/images/item_01_b.jpg" class="item_image">
+			  </div>
+
+			  <div class="product_image_big">
+			    <img src="content/music/yearone-cd/images/item_02_b.jpg" class="item_image">
+			  </div>
+			    
+			  <div class="product_image_big">
+			    <img src="content/music/yearone-cd/images/item_03_b.jpg" class="item_image">
+			  </div>
+			    
+			  <a class="product_gallery_button_prev" onclick="control_images(-1)"></a>
+			  <a class="product_gallery_button_next" onclick="control_images(1)"></a>
+
+			  <div class="product_image_gallery">
+			  	<div class="product_image_gallery_block">
+			      	<img class="product_image_small fix_image_gallery_left" src="content/music/yearone-cd/images/item_01_s.jpg" onclick="current_image(1)">
+			    </div>
+			    <div class="product_image_gallery_block">
+			      	<img class="product_image_small" src="content/music/yearone-cd/images/item_02_s.jpg" onclick="current_image(2)">
+			    </div>
+			    <div class="product_image_gallery_block">
+			      	<img class="product_image_small" src="content/music/yearone-cd/images/item_03_s.jpg" onclick="current_image(3)">
+			    </div>
+			    <div class="product_image_gallery_block">
+			      	<img class="product_image_small" src="content/music/yearone-cd/images/item_01_s.jpg" onclick="current_image(4)">
+			    </div>
+			    <div class="product_image_gallery_block">
+			      	<img class="product_image_small" src="content/music/yearone-cd/images/item_02_s.jpg" onclick="current_image(5)">
+			    </div>    
+			    <div class="product_image_gallery_block">
+			      	<img class="product_image_small fix_image_gallery_right" src="content/music/yearone-cd/images/item_03_s.jpg" onclick="current_image(6)">
+			    </div>
+			  </div>
+			</div>
+
+			<script type="text/javascript">
+				var image_index = 1;
+				show_images(image_index);
+				function control_images(n) { show_images(image_index += n) }
+				function current_image(n) { show_images(image_index = n) }
+				function show_images(n) {
+					var i;
+				  	var image_big = document.getElementsByClassName("product_image_big");
+				  	var image_small = document.getElementsByClassName("product_image_small");
+				  	if (n > image_big.length) {image_index = 1}
+				  	if (n < 1) {image_index = image_big.length}
+				  	for (i = 0; i < image_big.length; i++) { image_big[i].style.display = "none"; }
+				  	for (i = 0; i < image_small.length; i++) { image_small[i].className = image_small[i].className.replace(" active_image", ""); }
+				  	image_big[image_index-1].style.display = "block";
+				  	image_small[image_index-1].className += " active_image";
+				}
+			</script>
+
+		  </div>
+		  <div class="product_card">
+		  	<a class="buy_button_url" href="https://marshinshop.gumroad.com/l/yearone_cd" target="_blank"><div class="buy_button">$35</div></a>
+		   	<div class="buy_options">Bank card / Delivery Worldwide</div>
+
+		   	<div class="product_description">
+		   		Physical CD contains:
+		   			- 24 music tracks
+		   			- 1 digital artwork
+		   			- 3 music videos
+		   			- 23 song lyrics
+
+		   		Purchase include Physical CD and CD content in digital format (available after purchasing via download link)
+
+		   		Release track list:
+		   		1. Я ещё вернусь
+		   		2. Дай малышка мне огня
+		   		3. Клайд и Бонни
+		   		4. Jordan
+		   		5. Rise
+		   		6. Спортболид
+		   		7. Просто почитаем рэп
+		   		8. Lifeway
+		   		9. Встречаю рассвет
+		   		10. Love Stories
+		   		11. Part of our life
+		   		12. Рокет
+		   		13. Удивительный Капитан Маршин
+		   		14. Мистер 3 мульта
+		   		15. Не могу полюбить feat. Twenty-4 (Remastered)
+		   		16. Девочка с падика
+		   		17. Dynamite Freestyle
+		   		18. Perfect Ass
+		   		19. Совместный движ
+		   		20. Блондинка (другая версия)
+		   		21. Южное гетто feat. Fizerwa (Remastered)
+		   		22. Jordan II
+		   		23. Феникс (другая версия)
+		   		24. The Game Album Prelude
+
+		   		<b>License code</b> - your personal Product Serial Number. It's mean, that your product is unique and available in short quantity. You will get SN after purchase via email.
+		   	</div>
+
+		   	<div class="product_labels">
+		   		<span class="label">Language: Russian</span>
+		   		<span class="label">Duration: 1 hour, 9 minutes</span>
+		   		<span class="label">Release Date: 2021</span>
+		   		<span class="label">Delivery: Worldwide</span>
+		   		<span class="label">Number of discs: 1</span>
+		   		<span class="label">Circulation: 100</span>
+		   		<span class="label label_red">Parental Advisory: Explicit Lyrics</span>
+		   	</div>
+
+		  </div>
+		</div>
+
+	</div>
+
+	<div class="block_line"></div>
+
+	<div class="footer">
+		Маршин Entertainment<br>
+		2014-2021 Copyright. All rights reserved.
+
+		<div class="links"> <!-- Social Links -->
+			<a class="space-2" href="delivery.html">Delivery</a>
+			<a class="space-2" href="faq.html">FAQ</a>
+			<a class="space-2" href="support.html">Support</a>
+			<a class="space-2" href="https://t.me/captainmarshin">Telegram</a>
+			<a class="space-2" href="https://www.instagram.com/captainmarshin/">Instagram</a>
+			<a class="space-2" href="https://vk.com/captainmarshin">VK</a>
+			<a class="space-2" href="https://twitter.com/captainmarshin">Twitter</a>
+			<a class="space-2" href="https://captainmarshin.com">captainmarshin.com</a>
+		</div>
+	</div>
+
+</body>
+</html>
