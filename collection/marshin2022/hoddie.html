@@ -1,0 +1,177 @@
+<!-- 
+Marshin Shop Website.
+marshin.shop
+Desinged by Маршин Entertainment.
+Copyright. All rights reserved.
+2021
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Маршин Entertainment Black Hoodie - Маршин Shop</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="title" content="Маршин Entertainment Black Hoodie - Маршин Shop">
+	<meta name="description" content="Get Маршин Entertainment Black Hoodie on Маршин Shop">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://marshin.shop/collection/marshin2022/hoodie">
+	<meta property="og:title" content="Маршин Entertainment Black Hoodie - Маршин Shop">
+	<meta property="og:description" content="Get Маршин Entertainment Black Hoodie on Маршин Shop">
+	<meta property="og:image" content="../../favicon/preview_01_03.jpg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="http://marshin.shop/collection/marshin2022/hoodie">
+	<meta property="twitter:title" content="Маршин Entertainment Black Hoodie - Маршин Shop">
+	<meta property="twitter:description" content="Get Маршин Entertainment Black Hoodie on Маршин Shop">
+	<meta property="twitter:image" content="https://marshin.shop/favicon/preview_01_03.jpg">
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+	<link rel="manifest" href="../../favicon/site.webmanifest">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../../css/styles.css">
+
+</head>
+<body>
+
+	<div class="header">
+		<a href="http://marshin.shop">
+			<div class="title"><img src="../../images/logo.png"></div>
+		</a>
+	</div>
+
+	<div class="item_page">
+
+		<div class="product_title">Маршин Entertainment Black Hoodie</div>
+
+		<div class="product_cards">
+		  <div class="product_card">
+
+		    <div class="product_images_block">
+			  <div class="product_image_big">
+			    <img src="../../content/clothes/marshin2022/hoodie_01_b.jpg" class="item_image">
+			  </div>
+
+			  <div class="product_image_big">
+			    <img src="../../content/clothes/marshin2022/hoodie_03_b.jpg" class="item_image">
+			  </div>
+
+			  <div class="product_image_big">
+			    <img src="../../content/clothes/marshin2022/hoodie_04_b.jpg" class="item_image">
+			  </div>
+			    
+			  <div class="product_image_big">
+			    <img src="../../content/clothes/marshin2022/hoodie_05_b.jpg" class="item_image">
+			  </div>
+
+			  <div class="product_image_big">
+			    <img src="../../content/clothes/marshin2022/hoodie_06_b.jpg" class="item_image">
+			  </div>
+			    
+			  <div class="product_image_big">
+			    <img src="../../content/clothes/marshin2022/hoodie_02_b.jpg" class="item_image">
+			  </div>
+			    
+			  <a class="product_gallery_button_prev" onclick="control_images(-1)"></a>
+			  <a class="product_gallery_button_next" onclick="control_images(1)"></a>
+
+			  <div class="product_image_gallery">
+			  	<div class="product_image_gallery_block">
+			      	<img class="product_image_small fix_image_gallery_left" src="../../content/clothes/marshin2022/hoodie_01_s.jpg" onclick="current_image(1)">
+			    </div>
+			    <div class="product_image_gallery_block">
+			      	<img class="product_image_small" src="../../content/clothes/marshin2022/hoodie_03_s.jpg" onclick="current_image(2)">
+			    </div>
+			    <div class="product_image_gallery_block">
+			      	<img class="product_image_small" src="../../content/clothes/marshin2022/hoodie_04_s.jpg" onclick="current_image(3)">
+			    </div>
+			    <div class="product_image_gallery_block">
+			      	<img class="product_image_small" src="../../content/clothes/marshin2022/hoodie_05_s.jpg" onclick="current_image(4)">
+			    </div>
+			    <div class="product_image_gallery_block">
+			      	<img class="product_image_small" src="../../content/clothes/marshin2022/hoodie_06_s.jpg" onclick="current_image(5)">
+			    </div>    
+			    <div class="product_image_gallery_block">
+			      	<img class="product_image_small fix_image_gallery_right" src="../../content/clothes/marshin2022/hoodie_02_s.jpg" onclick="current_image(6)">
+			    </div>
+			  </div>
+			</div>
+
+			<script type="text/javascript">
+				var image_index = 1;
+				show_images(image_index);
+				function control_images(n) { show_images(image_index += n) }
+				function current_image(n) { show_images(image_index = n) }
+				function show_images(n) {
+					var i;
+				  	var image_big = document.getElementsByClassName("product_image_big");
+				  	var image_small = document.getElementsByClassName("product_image_small");
+				  	if (n > image_big.length) {image_index = 1}
+				  	if (n < 1) {image_index = image_big.length}
+				  	for (i = 0; i < image_big.length; i++) { image_big[i].style.display = "none"; }
+				  	for (i = 0; i < image_small.length; i++) { image_small[i].className = image_small[i].className.replace(" active_image", ""); }
+				  	image_big[image_index-1].style.display = "block";
+				  	image_small[image_index-1].className += " active_image";
+				}
+			</script>
+
+		  </div>
+		  <div class="product_card">
+		  	<a class="buy_button_url" href="https://obscure-ridge-45615.herokuapp.com/marshin2022/FraFh47AXZjGDpQPvJCuEnZY.html" target="_blank"><div class="buy_button">18$</div></a>
+		  	<div class="buy_options">Pay in RUB / Bank Card, QIWI</div>
+		  	<a class="buy_button_url" href="http://t.me/CryptoBot?start=IVpKwkPvYssO" target="_blank"><div class="buy_button cryptobot">Pay with TON</div></a>
+		   	<div class="buy_options">Pay in TON, USDT, USDC / CryptoBot in Telegram</div>
+		   	<!-- <div class="buy_button sold">Sold out</div>
+		   	<div class="buy_options">Join <a class="card-link" href="#">@captainmarsin Telegram channel</a> to get notifed about new drops.</div> -->
+
+		   	<div class="product_description">
+		   		Black Hoodie with Маршин Entertainment logo on front
+
+		   		Size: XXL
+
+		   		ДОСТАВКА ТОЛЬКО В ПЕРЕДЛАХ РФ. ВРЕМЯ ДОСТАВКИ РАСЧИТЫВАЕТСЯ ПОСЛЕ ОФОРЛМЕНИЯ ЗАКАЗА.
+
+		   		КАК ОПЛАТИТЬ ЧЕРЕЗ TON - <a class="card-link" href="https://marshin.shop/faq#cryptobot">ИНСТРУКЦИЯ</a>
+		   		КАК ОПЛАТИТЬ ЧЕРЕЗ RUB - <a class="card-link" href="https://marshin.shop/faq#howtobuy">ИНСТРУКЦИЯ</a>
+		   	</div>
+
+		   	<div class="product_labels">
+		   		<span class="label label_orange">Limited edition</span>
+		   		<span class="label">Delivery: Only RU</span>
+		   		<span class="label">Size: XXL</span>
+		   		<span class="label">Color: Black</span>
+		   	</div>
+
+		  </div>
+		</div>
+
+	</div>
+
+	<div class="block_line"></div>
+
+	<div class="footer">
+		Маршин Entertainment<br>
+		2014-2021 Copyright. All rights reserved.
+
+		<div class="links"> <!-- Social Links -->
+			<a class="space-2" href="https://marshin.shop/delivery">Delivery</a>
+			<a class="space-2" href="https://marshin.shop/faq">FAQ</a>
+			<a class="space-2" href="https://marshin.shop/support">Support</a>
+			<a class="space-2" href="https://t.me/captainmarshin">Telegram</a>
+			<a class="space-2" href="https://www.instagram.com/captainmarshin/">Instagram</a>
+			<a class="space-2" href="https://vk.com/captainmarshin">VK</a>
+			<a class="space-2" href="https://twitter.com/captainmarshin">Twitter</a>
+			<a class="space-2" href="https://captainmarshin.com">captainmarshin.com</a>
+		</div>
+	</div>
+
+</body>
+</html>
