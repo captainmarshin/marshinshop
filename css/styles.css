@@ -251,6 +251,10 @@ Copyright. All rights reserved.
 		  box-sizing: border-box;
 		}
 
+		a.card-link{
+			color: #c7c7c7;
+		}
+
 			.product_cards:after {
 			  content: "";
 			  display: table;
@@ -277,9 +281,25 @@ Copyright. All rights reserved.
 
 				.buy_options{
 					text-align: center;
-					color: #464646;
+					color: #c7c7c7;
 					font-size: 14px;
 					margin-top: 10px;
+					margin-bottom: 20px;
+				}
+
+				.cryptobot{
+					background-color: #44A3DD;
+					color: #fff;
+				}
+
+				.sold{
+					background-color: #000;
+					color: #c7c7c7;
+					border: 1px solid #c7c7c7;
+				}
+
+				.sold:hover{
+					cursor: not-allowed;
 				}
 
 		.product_description{
@@ -374,6 +394,11 @@ Copyright. All rights reserved.
 		.label_red{
 			color: red;
 			border: 1px solid red;
+		}
+
+		.label_orange{
+			color: orange;
+			border: 1px solid orange;
 		}
 
 		.label:last-child{
